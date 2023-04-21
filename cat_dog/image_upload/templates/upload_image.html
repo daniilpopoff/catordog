@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upload an Image</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Upload an Image</H1>
+    <form method="post"enctype="multipart/form-data">
+        {% csrf_token%}
+        {{form.as_p }}
+        <button type="submit">Upload</button>
+    </form> 
+    
+</body>
+</html>
